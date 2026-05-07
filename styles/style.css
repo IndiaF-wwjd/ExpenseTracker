@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(to left, #0A1172, #2832C2, #63C5DA);
+	min-height: 100vh;
+	font-family: "Optima Regular", serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	color: #000000;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 24px;
+	box-shadow: 0 12px 24px #000000;
+}
+h1 {
+	text-align: center;
+	color: #000000;
+	margin-bottom: 35px;
+	font-size: 2.2rem;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+}
+h2 {
+	color: #000000;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	font-size: 500;
+}
+.balanceContainer {
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 24px;
+	background: linear-gradient(to right, #0A1172, #2832C2, #63C5DA);
+	border-radius: 1rem;
+	box-shadow: 0 4px 12px #000000;
+}
+.balanceContainer h1 {
+	font-size: 3rem;
+	margin: 15px 0;
+}
+.summary {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	margin-top: 24px;
+}
+.mainContent {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	margin-top: 24px;
+}
+.income, .expenses {
+	background-color: #fff;
+	padding: 24px;
+	border-radius: 1rem;
+	box-shadow: 0 4px 12px #000000;
+	transition: transform 0.2s ease;
+}
+.income:hover, .expenses:hover {
+	transform: translateY(-2px);
+}
+.income h3 {
+	color: #00FF00;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.expenses h3 {
+	color: #FF0000;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.income p, .expenses p {
+	margin-top: 8px;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.income p {
+	color: #00FF00;
+}
+.expenses p {
+	color: #FF0000;
+}
+.transactionContainer {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#transactionList {
+	list-style: none;
+	max-height: 500px;
+	overflow: auto;
+	padding-right: 8px;
+	flex-grow: 1;
+}
+#transactionList::webkit-scrollbar {
+	width: 8px;
+}
+#transactionList::webkit-scrollbar-track {
+	background-color: #f1f1f1;
+	border-radius: 4px;
+}
+#transactionList::webkit-scrollbar-thumb {
+	
+}
+#transactionList::webkit-scrollbar-thumb:hover {
+	
+}
